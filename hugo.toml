@@ -1,0 +1,53 @@
+baseURL = 'https://proofs.rs/blog/'
+languageCode = 'en'
+title = 'proofs.rs blog'
+theme = 'PaperMod'
+disableKinds = ['taxonomy', 'term', '404']
+enableRobotsTXT = false
+disableHugoGeneratorInject = true
+disableAliases = true
+timeZone = 'UTC'
+
+[outputs]
+home = ['HTML', 'RSS']
+section = ['HTML']
+page = ['HTML']
+
+[outputFormats.RSS]
+baseName = 'rss'
+
+[params]
+mainSections = ["posts"]
+description = 'Updates on Rust formal verification and the tools we build.'
+defaultTheme = 'light'
+disableThemeToggle = true
+disableScrollToTop = true
+ShowReadingTime = false
+ShowCodeCopyButtons = false
+ShowPostNavLinks = false
+ShowShareButtons = false
+disableSpecial1stPost = true
+disableAnchoredHeadings = true
+author = 'Yuichi Nishiwaki'
+
+[params.homeInfoParams]
+Title = 'proofs.rs blog'
+Content = 'Updates on Rust formal verification and the tools we build.'
+
+[pagination]
+disableAliases = true
+
+[markup.goldmark.renderer]
+unsafe = false
+
+[markup.highlight]
+noClasses = false
+
+[markup.goldmark.extensions]
+typographer = false
+
+[markup.goldmark.extensions.passthrough]
+enable = true
+[markup.goldmark.extensions.passthrough.delimiters]
+block = [['$$', '$$']]
+inline = [['\(', '\)'], ['$', '$']]
