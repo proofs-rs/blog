@@ -1,6 +1,5 @@
 +++
 title = "How Google's zerocopy Project Uses lean-miri to Verify Unsafe Rust"
-description = "lean-miri was recently adopted by Anneal, a Rust verification framework developed inside the zerocopy repository. Following this adoption, a pull request…"
 date = 2026-11-24T14:12:30Z
 slug = "how-google-s-zerocopy-project-uses-lean-miri-to-verify-unsafe-rust"
 type = "posts"

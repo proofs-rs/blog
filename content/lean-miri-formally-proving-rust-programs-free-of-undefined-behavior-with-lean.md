@@ -1,6 +1,5 @@
 +++
 title = "lean-miri: Formally Proving Rust Programs Free of Undefined Behavior with Lean"
-description = "Miri is an interpreter for Rust’s Mid-level Intermediate Representation (MIR) that detects undefined behavior (UB). It supports a wide range of Rust…"
 date = 2026-11-03T14:24:37Z
 slug = "lean-miri-formally-proving-rust-programs-free-of-undefined-behavior-with-lean"
 type = "posts"

@@ -15,7 +15,9 @@
       <guid isPermaLink="false">{{ .Params.rss_guid | default .Permalink }}</guid>
       <dc:creator>{{ .Params.author | default site.Params.author }}</dc:creator>
       <pubDate>{{ .PublishDate.Format "Mon, 02 Jan 2006 15:04:05 -0700" }}</pubDate>
-      <description>{{ .Description }}</description>
+      {{- with .Description }}
+      <description>{{ . }}</description>
+      {{- end }}
       <content:encoded>{{ .Content | htmlEscape | safeHTML }}</content:encoded>
     </item>
     {{- end }}
