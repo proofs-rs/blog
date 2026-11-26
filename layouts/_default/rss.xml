@@ -3,7 +3,7 @@
   <channel>
     <title>{{ site.Title }}</title>
     <link>{{ .Permalink }}</link>
-    <description>{{ site.Params.description }}</description>
+    <description>{{ site.Title }}</description>
     <language>{{ site.Language.LanguageCode }}</language>
     {{- with .OutputFormats.Get "RSS" }}
     <atom:link href="{{ .Permalink }}" rel="self" type="application/rss+xml"/>

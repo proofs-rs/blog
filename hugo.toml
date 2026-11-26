@@ -18,7 +18,6 @@ baseName = 'rss'
 
 [params]
 mainSections = ["posts"]
-description = 'Updates on Rust formal verification and the tools we build.'
 defaultTheme = 'light'
 disableThemeToggle = true
 disableScrollToTop = true
@@ -32,7 +31,6 @@ author = 'Yuichi Nishiwaki'
 
 [params.homeInfoParams]
 Title = 'proofs.rs blog'
-Content = 'Updates on Rust formal verification and the tools we build.'
 
 [pagination]
 disableAliases = true
