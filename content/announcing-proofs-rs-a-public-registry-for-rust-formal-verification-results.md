@@ -1,6 +1,5 @@
 +++
 title = "Announcing Proofs.rs: A Public Registry for Rust Formal Verification Results"
-description = "Hi, folks! We’re very happy to introduce proofs.rs, a place to publish and explore formal verification results for Rust crates. There are some great tools…"
 date = 2026-10-10T22:23:16Z
 slug = "announcing-proofs-rs-a-public-registry-for-rust-formal-verification-results"
 type = "posts"

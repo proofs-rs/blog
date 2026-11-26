@@ -19,9 +19,9 @@
     {{- range $i, $e := .Params.keywords }}{{ if $i }}, {{ end }}{{ $e }}{{ end }} {{- else }}
     {{- range $i, $e := .Params.tags }}{{ if $i }}, {{ end }}{{ $e }}{{ end }} {{- end -}}">
 {{- end }}
-<meta name="description" content="{{- with .Description }}{{ . }}{{- else }}{{- if or .IsPage .IsSection}}
-    {{- .Summary | default (printf "%s - %s" .Title  site.Title) }}{{- else }}
-    {{- site.Title -}}{{- end }}{{- end -}}">
+{{- with .Description }}
+<meta name="description" content="{{ . }}">
+{{- end }}
 <meta name="author" content="{{ (partial "author.html" . ) }}">
 <link rel="canonical" href="{{ if .Params.canonicalURL -}} {{ trim .Params.canonicalURL " " }} {{- else -}} {{ .Permalink }} {{- end }}">
 {{- if site.Params.analytics.google.SiteVerificationTag }}
@@ -105,7 +105,9 @@
 {{- partial "extend_head.html" . -}}
 
 <meta property="og:title" content="{{ .Title }}">
-<meta property="og:description" content="{{ .Description | default site.Title }}">
+{{- with .Description }}
+<meta property="og:description" content="{{ . }}">
+{{- end }}
 <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
 <meta property="og:url" content="{{ .Permalink }}">
 <meta property="og:site_name" content="{{ site.Title }}">

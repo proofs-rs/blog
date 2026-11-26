@@ -4,7 +4,7 @@ Markdown source for [proofs.rs/blog/](https://proofs.rs/blog/), built with Hugo 
 
 ## Write and preview
 
-1. Add a Markdown file under `content/` with TOML front matter (`title`, `description`, `date`, `slug`, and `author`). Keep a published slug and RSS GUID stable. Imported articles also retain their original URL.
+1. Add a Markdown file under `content/` with TOML front matter (`title`, `date`, `slug`, and `author`). Leave the optional `description` absent if the post does not need one. Keep a published slug and RSS GUID stable. Imported articles also retain their original URL.
 2. Install **Hugo extended v0.152.2** and Git. Run `sh scripts/build.sh`. It checks out the pinned PaperMod v8.0 commit on the first build and creates `public/`. To use a specific Hugo binary, set `HUGO=/path/to/hugo`.
 3. Preview with `hugo server` after the first build. Static output is mounted under `/blog/`, with the feed at `/blog/rss.xml`.
 4. Commit the source, not the generated directory. The website repository syncs the verified Hugo output and records the source commit for release. See the website repository's blog deployment instructions.
